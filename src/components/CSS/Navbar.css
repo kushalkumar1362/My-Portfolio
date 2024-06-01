@@ -1,0 +1,28 @@
+.header {
+    padding: 15px;
+    position: fixed;
+    background-color: var(--bg-black-50);
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.header .hamburger-btn {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease;
+}
+
+.header .hamburger-btn::after {
+    border-radius: 50%;
+}
+
+.header .hamburger-btn:active::after {
+    box-shadow: none;
+}
