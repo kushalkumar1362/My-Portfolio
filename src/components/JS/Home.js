@@ -1,11 +1,98 @@
-import React from 'react';
-// import { Route, Routes } from "react-router-dom";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import "../CSS/Home.css"
+import kushalImage from "../../Images/Kushal_kumar.png";
 
 const Home = () => {
+    const [isOpen, setOpen] = useState(false);
+
     return (
-        <div className='flex justify-center items-center'>
-            You are at Home
-            <img src="" alt="" />
+        <div className="min-h-[100vh] relative md:pt-20">
+            <div class="effect-wrap">
+                <div class="effect effect-1"></div>
+                <div class="effect effect-2">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="effect effect-3"></div>
+                <div class="effect effect-4">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div className="container">
+                <div className="flex flex-wrap full-screen items-center py-[50px]">
+                    <div className="home-text">
+                        <p>Hello</p>
+                        <h2>I'm Kushal Kumar </h2>
+                        <h1>Developer & DSA Learner</h1>
+                        <NavLink
+                            to="/about"
+                            className={"btn-1 outer-shadow hover-in-shadow"}
+                            onClick={() => setOpen(false)}>
+                            More About Me
+                        </NavLink>{" "}
+                        &nbsp;
+                        <NavLink
+                            to="/portfolio"
+                            className={"btn-1 outer-shadow hover-in-shadow"}
+                            onClick={() => setOpen(false)}>
+                            Portfolio
+                        </NavLink>{" "}
+                        &nbsp;
+                        <NavLink
+                            to="/contact"
+                            className={"btn-1 outer-shadow hover-in-shadow"}
+                            onClick={() => setOpen(false)}>
+                            Contact
+                        </NavLink>{" "}
+                        &nbsp;
+                    </div>
+                    <div className=".home-image">
+                        <div className="img-box inner-shadow">
+                            <img
+                                src={kushalImage}
+                                alt=""
+                                className="my-image outer-shadow"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

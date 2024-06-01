@@ -8,7 +8,7 @@ import Portfolio from "./components/JS/Projects";
 
 const App = () => {
     return (
-        <div>
+        <div className="">
             <div>
                 <Navbar />
             </div>
