@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../CSS/Home.css"
 import kushalImage from "../../Images/Kushal_kumar.png";
+import StyleSwitcher from "../Themes/StyleSwitcher";
 
 const Home = () => {
     const [isOpen, setOpen] = useState(false);
@@ -93,6 +94,8 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+
+            <StyleSwitcher></StyleSwitcher>
         </div>
     );
 };
