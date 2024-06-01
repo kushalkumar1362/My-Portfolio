@@ -9,9 +9,9 @@ const Home = () => {
 
     return (
         <div className="min-h-[100vh] relative md:pt-20">
-            <div class="effect-wrap">
-                <div class="effect effect-1"></div>
-                <div class="effect effect-2">
+            <div className="effect-wrap">
+                <div className="effect effect-1"></div>
+                <div className="effect effect-2">
                     <div></div>
                     <div></div>
                     <div></div>
@@ -41,8 +41,8 @@ const Home = () => {
                     <div></div>
                     <div></div>
                 </div>
-                <div class="effect effect-3"></div>
-                <div class="effect effect-4">
+                <div className="effect effect-3"></div>
+                <div className="effect effect-4">
                     <div></div>
                     <div></div>
                     <div></div>

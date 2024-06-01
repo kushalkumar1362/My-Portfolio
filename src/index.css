@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root {
+    --skin-color: #2eb1ed;
     --bg-black-900: #000000;
     --bg-black-100: #dddddd;
     --bg-black-50: #eff0f4;
@@ -18,16 +19,16 @@
 }
 
 body.dark {
-    --bg-black-900:     #ffffff;
-    --bg-black-100:     #353535;
-    --bg-black-50:      #2b2c2f;
-    --bg-opacity:       rgba(43, 44, 47, .5);
-    --text-black-900:   #ffffff;
-    --text-black-700:   #ffffff;
-    --text-black-600:   #bbbbbb;
-    --text-black-300:   #bbbbbb;
-    --outer-shadow:     3px 3px 3px #222327, -3px -3px 3px #363636;
-    --outer-shadow-0:   0 0 0 #222327, 0 0 0 #363636;
+    --bg-black-900: #ffffff;
+    --bg-black-100: #353535;
+    --bg-black-50: #2b2c2f;
+    --bg-opacity: rgba(43, 44, 47, 0.5);
+    --text-black-900: #ffffff;
+    --text-black-700: #ffffff;
+    --text-black-600: #bbbbbb;
+    --text-black-300: #bbbbbb;
+    --outer-shadow: 3px 3px 3px #222327, -3px -3px 3px #363636;
+    --outer-shadow-0: 0 0 0 #222327, 0 0 0 #363636;
     --inner-shadow: inset 3px 3px 3px #222327, inset -3px -3px 3px #363636;
     --inner-shadow-0: inset 0 0 0 #222327, inset 0 0 0 #363636;
 }
@@ -39,7 +40,7 @@ body.dark {
     outline: none;
 }
 *:not(i) {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 400;
 }
 
@@ -54,7 +55,8 @@ body.stop-scrolling {
     overflow-y: hidden;
 }
 
-::before, ::after {
+::before,
+::after {
     box-sizing: border-box;
 }
 
@@ -66,8 +68,7 @@ body.stop-scrolling {
 .btn-1 {
     padding: 10px 25px;
     font-size: 16px;
-    /* color: var(--skin-color); */
-    color: #1fc586;;
+    color: var(--skin-color);
     background-color: transparent;
     line-height: 1.5;
     cursor: pointer;

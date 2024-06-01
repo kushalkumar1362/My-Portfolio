@@ -27,7 +27,7 @@ const Navbar = () => {
                         onClick={handleHomeClick}>
                         Home
                     </NavLink>
-                    <div class="hamburger-btn outer-shadow hover-in-shadow">
+                    <div className="hamburger-btn outer-shadow hover-in-shadow">
                         <HamburgerMenu />
                     </div>
                 </div>

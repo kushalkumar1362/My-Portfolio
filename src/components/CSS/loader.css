@@ -27,8 +27,7 @@
 .preloader .box div {
     height: 15px;
     width: 15px;
-    /* background-color: var(--skin-color); */
-    background-color: green;
+    background-color: var(--skin-color);
     border-radius: 50%;
     animation: loaderAni 1s ease infinite;
 }
