@@ -1,15 +1,21 @@
 import React, { useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Squash as Hamburger } from "hamburger-react";
 import "../CSS/HamburgerMenu.css"; // Import the CSS file
 
 const HamburgerMenu = () => {
     const [isOpen, setOpen] = useState(false);
-    const location = useLocation();
 
     return (
         <div>
-            <Hamburger toggled={isOpen} toggle={setOpen} size={21} rounded />
+            <div className="ham-color">
+                <Hamburger
+                    toggled={isOpen}
+                    toggle={setOpen}
+                    size={21}
+                    rounded
+                />
+            </div>
             {isOpen && (
                 <nav className="nav-menu">
                     <div className="flex items-center justify-center h-full">
