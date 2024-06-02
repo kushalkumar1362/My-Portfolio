@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 :root {
-    --skin-color: #2eb1ed;
     --bg-black-900: #000000;
     --bg-black-100: #dddddd;
     --bg-black-50: #eff0f4;
@@ -45,7 +44,7 @@ body.dark {
 }
 
 body {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
     background-color: var(--bg-black-50);
     overflow-x: hidden;

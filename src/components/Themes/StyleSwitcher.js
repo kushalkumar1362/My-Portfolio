@@ -1,4 +1,5 @@
 import { FaSun, FaMoon, FaCog } from "react-icons/fa";
+import "font-awesome/css/font-awesome.min.css";
 import React, { useEffect, useState } from "react";
 import "./CSS/StyleSwitcher.css";
 import "./CSS/color-1.css";
@@ -49,7 +50,7 @@ const StyleSwitcher = () => {
             <div
                 className="top-0 s-icon outer-shadow hover-in-shadow"
                 onClick={handleToggleClick}>
-                <FaCog />
+                <FaCog className="fa-spin" size={25} />
             </div>
 
             <div

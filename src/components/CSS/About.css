@@ -1,0 +1,263 @@
+.section-title {
+    padding: 0 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.section-title p {
+    content: attr(data-heading);
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--skin-color);
+}
+
+.about-img {
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding: 0 15px;
+}
+
+.about-img .img-box {
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.about-img .img-box img {
+    width: 100%;
+    height: 25rem;
+    border: 10px solid transparent;
+    border-radius: 5px;
+}
+
+.social-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--text-black-700);
+    margin: 3px;
+    padding: 9px;
+}
+
+.social-links a:hover {
+    color: var(--skin-color);
+}
+
+.social-links a:hover::after {
+    border-radius: 50%;
+}
+
+.social-links a:active::after {
+    box-shadow: none;
+    color: var(--text-black-900);
+}
+
+.about-info {
+    flex: 0 0 60%;
+    max-width: 60%;
+    padding: 0 15px;
+}
+
+.about-info p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 16px;
+    color: var(--text-black-600);
+}
+.about-info p a {
+    color: var(--skin-color);
+}
+
+.about-info p a:hover {
+    text-decoration: underline;
+}
+
+.about-info span {
+    font-weight: 600;
+}
+
+.about-tabs {
+    padding: 60px 15px 50px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.tab-item {
+    display: inline-block;
+    margin: 0 10px 10px;
+    padding: 5px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    color: var(--text-black-600);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.about-tabs .tab-item:hover:not(.active) {
+    opacity: 0.6;
+}
+
+.active {
+    color: var(--skin-color);
+}
+
+/*  ========= 
+    Skills
+    =========
+*/
+
+.skills {
+    padding: 0 0 40px;
+}
+
+.tab-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    animation: fadeInTop 1s ease;
+}
+
+.category-divider {
+    margin-bottom: 40px;
+}
+
+.category-divider h1,
+.category-divider hr {
+    margin: 0 10px;
+}
+
+.category-divider h1 {
+    margin: 10px;
+    color: var(--text-black-600);
+}
+
+/*  ========= 
+    Education
+    =========
+*/
+
+.education {
+    padding-bottom: 80px;
+}
+
+.timeline {
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+.timeline::before {
+    content: "";
+    width: 3px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    background-color: var(--bg-black-100);
+    position: absolute;
+}
+
+.timeline-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+.timeline-item:nth-child(odd) {
+    padding-left: calc(50% + 50px);
+    text-align: left;
+}
+
+.timeline .timeline-item:nth-child(even) {
+    padding-right: calc(50% + 50px);
+    text-align: right;
+}
+
+.timeline-item-inner {
+    padding: 30px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.timeline-item-inner::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: var(--bg-black-100);
+    top: 37px;
+    z-index: -1;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-inner::before {
+    left: -30px;
+}
+.timeline-item:nth-child(even) .timeline-item-inner::before {
+    right: -30px;
+}
+
+.timeline .timeline-item-inner .icon {
+    width: 30px;
+    height: 30px;
+    background-color: var(--bg-black-50);
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: 18px;
+    border: 1px solid var(--bg-black-100);
+    border-radius: 50%;
+    font-size: 16px;
+    color: var(--skin-color);
+    padding: 2px;
+}
+
+.timeline .timeline-item:nth-child(odd) .icon {
+    left: -70px;
+}
+.timeline .timeline-item:nth-child(even) .icon {
+    right: -70px;
+}
+
+.timeline .timeline-item-inner span {
+    font-weight: 500;
+    color: var(--skin-color);
+    display: block;
+    margin: 0 0 10px;
+    text-transform: capitalize;
+}
+
+.timeline .timeline-item-inner h3 {
+    font-size: 20px;
+    color: var(--text-black-700);
+    font-weight: 600;
+    margin: 0 05px;
+    text-transform: capitalize;
+}
+
+.timeline .timeline-item-inner h4 {
+    font-size: 16px;
+    color: var(--text-black-600);
+    font-style: italic;
+    margin: 0;
+}

@@ -21,11 +21,11 @@ const HamburgerMenu = () => {
                     <div className="flex items-center justify-center h-full">
                         <div className="p-4 flex flex-col gap-10">
                             <NavLink
-                                to={"/"}
+                                to="/"
                                 className={({ isActive }) =>
-                                    isActive
-                                        ? "btn-1 outer-shadow hover-in-shadow inner-shadow"
-                                        : "btn-1 outer-shadow hover-in-shadow"
+                                    `nav-link btn-1 outer-shadow hover-in-shadow ${
+                                        isActive ? "inner-shadow active" : ""
+                                    }`
                                 }
                                 onClick={() => setOpen(false)}>
                                 Home
@@ -33,9 +33,9 @@ const HamburgerMenu = () => {
                             <NavLink
                                 to="/about"
                                 className={({ isActive }) =>
-                                    isActive
-                                        ? "btn-1 outer-shadow hover-in-shadow inner-shadow"
-                                        : "btn-1 outer-shadow hover-in-shadow"
+                                    `nav-link btn-1 outer-shadow hover-in-shadow ${
+                                        isActive ? "inner-shadow active" : ""
+                                    }`
                                 }
                                 onClick={() => setOpen(false)}>
                                 About
@@ -43,9 +43,9 @@ const HamburgerMenu = () => {
                             <NavLink
                                 to="/portfolio"
                                 className={({ isActive }) =>
-                                    isActive
-                                        ? "btn-1 outer-shadow hover-in-shadow inner-shadow"
-                                        : "btn-1 outer-shadow hover-in-shadow"
+                                    `nav-link btn-1 outer-shadow hover-in-shadow ${
+                                        isActive ? "inner-shadow active" : ""
+                                    }`
                                 }
                                 onClick={() => setOpen(false)}>
                                 Portfolio
@@ -53,9 +53,9 @@ const HamburgerMenu = () => {
                             <NavLink
                                 to="/contact"
                                 className={({ isActive }) =>
-                                    isActive
-                                        ? "btn-1 outer-shadow hover-in-shadow inner-shadow"
-                                        : "btn-1 outer-shadow hover-in-shadow"
+                                    `nav-link btn-1 outer-shadow hover-in-shadow ${
+                                        isActive ? "inner-shadow active" : ""
+                                    }`
                                 }
                                 onClick={() => setOpen(false)}>
                                 Contact
