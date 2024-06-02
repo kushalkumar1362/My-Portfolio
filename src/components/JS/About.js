@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../CSS/About.css";
 import Skills from "./Skills";
-import Education from "./Education"; // Assume you have an Education component
+import Education from "./Education";
 import kushalCv from "../../Images/kushal-kumar-Resume.pdf";
 import kushalImage from "../../Images/Kushal_kumar.png";
 import StyleSwitcher from "../Themes/StyleSwitcher";
