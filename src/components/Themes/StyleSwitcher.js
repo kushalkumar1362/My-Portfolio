@@ -31,19 +31,23 @@ const StyleSwitcher = () => {
     };
 
     const handleToggleClick = () => {
-        console.log("Toggle clicked");
+        console.log("handleToggleClick Click");
         setIsOpen(!isOpen);
     };
 
     const handleColorChange = (color) => {
         setSkinColor(color);
+        console.log("handleColorChange Click");
     };
 
     useEffect(() => {
-        const root = document.documentElement;
-        root.style.setProperty("--skin-color", skinColor);
-        setIsOpen(false);
-    }, [skinColor]);
+        console.log("useEffect for skinColor Trigered");
+        if (isOpen) {
+            // Check if the menu is open
+            const root = document.documentElement;
+            root.style.setProperty("--skin-color", skinColor);
+        }
+    }, [skinColor, isOpen]);
 
     return (
         <div className={`style-switcher outer-shadow ${isOpen ? "open" : ""}`}>
