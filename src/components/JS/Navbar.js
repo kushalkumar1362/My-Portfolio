@@ -12,7 +12,7 @@ const Navbar = () => {
         // Add a timeout to simulate a delay
         setTimeout(() => {
             setIsLoading(false);
-        }, 3000);
+        }, 2000);
     };
 
     return (
