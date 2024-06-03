@@ -30,7 +30,7 @@ const About = () => {
                             <img
                                 src={kushalImage}
                                 alt=""
-                                className="my-image outer-shadow"
+                                className="outer-shadow"
                             />
                         </div>
 

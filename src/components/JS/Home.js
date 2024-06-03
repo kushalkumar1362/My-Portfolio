@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import "../CSS/Home.css"
+import "../CSS/Home.css";
 import kushalImage from "../../Images/Kushal_kumar.png";
 import StyleSwitcher from "../Themes/StyleSwitcher";
 
 const Home = () => {
     const [isOpen, setOpen] = useState(false);
-
+    function clickHandler() {
+        window.scrollTo(0, 0);
+        setOpen(false);
+    }
     return (
         <div className="min-h-[100vh] relative md:pt-20">
             <div className="effect-wrap">
@@ -64,21 +67,21 @@ const Home = () => {
                         <NavLink
                             to="/about"
                             className={"btn-1 outer-shadow hover-in-shadow"}
-                            onClick={() => setOpen(false)}>
+                            onClick={clickHandler}>
                             More About Me
                         </NavLink>{" "}
                         &nbsp;
                         <NavLink
                             to="/portfolio"
                             className={"btn-1 outer-shadow hover-in-shadow"}
-                            onClick={() => setOpen(false)}>
+                            onClick={clickHandler}>
                             Portfolio
                         </NavLink>{" "}
                         &nbsp;
                         <NavLink
                             to="/contact"
                             className={"btn-1 outer-shadow hover-in-shadow"}
-                            onClick={() => setOpen(false)}>
+                            onClick={clickHandler}>
                             Contact
                         </NavLink>{" "}
                         &nbsp;

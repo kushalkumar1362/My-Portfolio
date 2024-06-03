@@ -26,11 +26,13 @@ const Projects = () => {
              document.body.classList.add("no-scroll");
          } else {
              document.body.classList.remove("no-scroll");
+              window.scrollTo(0, 0);
          }
 
          // Cleanup on component unmount
          return () => {
              document.body.classList.remove("no-scroll");
+              window.scrollTo(0, 0);
          };
      }, [popupOpen]);
 
