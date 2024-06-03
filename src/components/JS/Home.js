@@ -56,7 +56,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="container">
-                <div className="flex flex-wrap full-screen items-center py-[50px]">
+                <div className="flex flex-wrap justify-center full-screen items-center py-[50px]">
                     <div className="home-text">
                         <p>Hello</p>
                         <h2>I'm Kushal Kumar </h2>

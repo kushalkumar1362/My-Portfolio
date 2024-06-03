@@ -61,7 +61,7 @@
     font-size: 14px;
     font-weight: 500;
     color: var(--skin-color);
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     position: absolute;
     left: 5px;
     bottom: -4px;
@@ -87,7 +87,6 @@
 .portfolio-item-details {
     display: none;
 }
-
 
 /* ===========
 PORTFOLIO POPUP 
@@ -125,7 +124,6 @@ PORTFOLIO POPUP
     max-height: 500px; /* or an appropriate height */
     opacity: 1;
     transition: all 1s ease-in;
-
 }
 
 .portfolio-popup .pp-details-inner {
@@ -263,7 +261,7 @@ PORTFOLIO POPUP
     line-height: 35px;
     color: var(--text-black-600);
     cursor: pointer;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
 }
 
 .portfolio-popup .pp-close::after {
@@ -280,4 +278,38 @@ PORTFOLIO POPUP
 
 .portfolio-popup .pp-project-details-btn:focus {
     outline: 2px solid var(--skin-color);
+}
+
+@media (max-width: 767px) {
+    .portfolio-items {
+        max-width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .portfolio-item {
+        flex: 1 1 50%;
+        max-width: 100%;
+    }
+
+    .portfolio-popup .info,
+    .portfolio-popup .description {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .portfolio-popup .pp-main {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 574px) {
+     .portfolio-item {
+        flex: 1 1 100%; 
+        max-width: 100%;
+    }
+}
+
+.no-scroll {
+    overflow: hidden;
 }

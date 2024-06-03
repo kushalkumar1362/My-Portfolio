@@ -150,3 +150,64 @@
     border-radius: 50%;
     border: 10px solid transparent;
 }
+
+/* 
+=========
+Media Queries
+=========
+*/
+@media (max-width: 767px) {
+    .home-text,
+    .home-image {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .img-box {
+        margin: auto !important;
+        margin-bottom: 40px;
+        max-width: 350px;
+    }
+
+    .home-text {
+        order: 2;
+        text-align: center;
+    }
+
+    .full-screen {
+        padding: 100px 0;
+    }
+
+    .effect-3 {
+        left: 15%;
+    }
+    .effect-4 {
+        right: 4%;
+    }
+}
+
+@media (max-width: 574px) {
+    .img-box {
+        max-width: 260px;
+    }
+
+    .home-text {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .my-image {
+        width: 26rem;
+        height: auto;
+        border-radius: 50%;
+        border: 10px solid transparent;
+    }
+
+    .home-text h2 {
+        font-size: 40px;
+    }
+
+    .btn-1{
+        max-width: 80%;
+        margin-left: 4vh;
+    }
+}

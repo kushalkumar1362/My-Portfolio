@@ -56,3 +56,10 @@
     margin: 0;
     word-break: break-word;
 }
+
+@media (max-width: 767px) {
+.contact-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

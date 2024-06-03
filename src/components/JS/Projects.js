@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../CSS/Projects.css";
 import PortfolioPopup from "./PortfolioPopup";
 import Loader from "../JS/loader";
@@ -21,6 +21,19 @@ const Projects = () => {
         }
     };
 
+     useEffect(() => {
+         if (popupOpen) {
+             document.body.classList.add("no-scroll");
+         } else {
+             document.body.classList.remove("no-scroll");
+         }
+
+         // Cleanup on component unmount
+         return () => {
+             document.body.classList.remove("no-scroll");
+         };
+     }, [popupOpen]);
+
     return (
         <div className="projects-section">
             <div className="py-[80px] min-h-[100vh]">
@@ -33,7 +46,7 @@ const Projects = () => {
                             <h2>Latest Works</h2>
                         </div>
                     </div>
-                    <div className="flex flex-wrap">
+                    <div className="flex flex-wrap portfolio-items">
                         {portfolioData.map((project, index) => (
                             <div key={index} className="portfolio-item">
                                 <div
