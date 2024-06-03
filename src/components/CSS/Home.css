@@ -156,6 +156,14 @@
 Media Queries
 =========
 */
+
+@media (max-width: 1107px) {
+    .home-text {
+        order: 2;
+        text-align: center;
+    }
+}
+
 @media (max-width: 767px) {
     .home-text,
     .home-image {
@@ -166,11 +174,6 @@ Media Queries
         margin: auto !important;
         margin-bottom: 40px;
         max-width: 350px;
-    }
-
-    .home-text {
-        order: 2;
-        text-align: center;
     }
 
     .full-screen {
@@ -194,7 +197,7 @@ Media Queries
         display: flex;
         flex-direction: column;
     }
-    
+
     .my-image {
         width: 26rem;
         height: auto;
@@ -206,7 +209,7 @@ Media Queries
         font-size: 40px;
     }
 
-    .btn-1{
+    .btn-1 {
         max-width: 80%;
         margin-left: 4vh;
     }
