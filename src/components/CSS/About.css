@@ -312,10 +312,14 @@
         margin-bottom: 0;
     }
 
-        .timeline
-        .timeline-item:nth-child(even)
-        .timeline-item-inner::before {
+    .timeline .timeline-item:nth-child(even) .timeline-item-inner::before {
         left: -30px;
         right: auto;
+    }
+}
+
+@media (max-width: 574px) {
+    .about-img .img-box img {
+        height: 27rem;
     }
 }
