@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import "../CSS/Projects.css";
 import { FaPlus, FaMinus } from "react-icons/fa6";
-import { WiSnowWind } from "react-icons/wi";
+
 
 const PortfolioPopup = ({ data, onClose }) => {
+    
     const { title, description, tools, website, screenshots } = data;
     const [showDetails, setShowDetails] = useState(false);
 
@@ -26,7 +27,7 @@ const PortfolioPopup = ({ data, onClose }) => {
                                 <h3>Project Info</h3>
                                 <ul>
                                     <li>
-                                        Tools <span>{tools}</span>
+                                        Tools <span>{tools.join(", ")}</span>
                                     </li>
                                     <li>
                                         Web{" "}
@@ -73,17 +74,6 @@ const PortfolioPopup = ({ data, onClose }) => {
             </div>
         </div>
     );
-};
-
-PortfolioPopup.propTypes = {
-    data: PropTypes.shape({
-        title: PropTypes.string.isRequired,
-        description: PropTypes.string.isRequired,
-        tools: PropTypes.string.isRequired,
-        website: PropTypes.string.isRequired,
-        screenshots: PropTypes.arrayOf(PropTypes.string).isRequired,
-    }).isRequired,
-    onClose: PropTypes.func.isRequired,
 };
 
 export default PortfolioPopup;
