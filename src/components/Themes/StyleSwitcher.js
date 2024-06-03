@@ -13,7 +13,9 @@ const StyleSwitcher = () => {
         localStorage.getItem("theme") || "light"
     );
     const [isOpen, setIsOpen] = useState(false);
-    const [skinColor, setSkinColor] = useState("");
+    const [skinColor, setSkinColor] = useState(
+        localStorage.getItem("skinColor") || "#1fc586"
+    );
 
     useEffect(() => {
         console.log("Theme:", theme);
@@ -37,17 +39,16 @@ const StyleSwitcher = () => {
 
     const handleColorChange = (color) => {
         setSkinColor(color);
+        localStorage.setItem("skinColor", color);
+         setIsOpen(false);
         console.log("handleColorChange Click");
     };
 
     useEffect(() => {
         console.log("useEffect for skinColor Trigered");
-        if (isOpen) {
-            // Check if the menu is open
-            const root = document.documentElement;
-            root.style.setProperty("--skin-color", skinColor);
-        }
-    }, [skinColor, isOpen]);
+        const root = document.documentElement;
+        root.style.setProperty("--skin-color", skinColor);
+    }, [skinColor]);
 
     return (
         <div className={`style-switcher outer-shadow ${isOpen ? "open" : ""}`}>
