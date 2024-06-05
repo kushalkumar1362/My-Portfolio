@@ -53,13 +53,13 @@ const StyleSwitcher = () => {
     return (
         <div className={`style-switcher outer-shadow ${isOpen ? "open" : ""}`}>
             <div
-                className="top-0 s-icon outer-shadow hover-in-shadow"
+                className="md:top-0 top-[55px] s-icon outer-shadow hover-in-shadow"
                 onClick={handleToggleClick}>
                 <FaCog className="fa-spin" size={25} />
             </div>
 
             <div
-                className="top-[55px] s-icon outer-shadow hover-in-shadow"
+                className="md:top-[55px] top-0 s-icon outer-shadow hover-in-shadow"
                 onClick={handleThemeToggle}>
                 {theme === "dark" ? (
                     <FaSun className="icon" />
@@ -68,6 +68,7 @@ const StyleSwitcher = () => {
                 )}
             </div>
 
+            <div className="small-screen">
             <h4>Theme Colors</h4>
             <div className="colors">
                 <span
@@ -85,6 +86,7 @@ const StyleSwitcher = () => {
                 <span
                     className="color-5"
                     onClick={() => handleColorChange("#cc3a3b")}></span>
+            </div>
             </div>
         </div>
     );
