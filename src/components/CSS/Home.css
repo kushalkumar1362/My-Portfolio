@@ -202,6 +202,8 @@ Media Queries
         width: 26rem;
         height: auto;
         border-radius: 50%;
+        height: 16rem;
+
         border: 10px solid transparent;
     }
 
