@@ -19,23 +19,25 @@ const Contact = () => {
                 <div className="flex flex-wrap">
                     <div className="contact-item">
                         <div className="contact-item-inner outer-shadow">
-                            <FaPhone className="fa-icon" />
-                            <span>Talk to me</span>
-                            <p>
-                                <a href="tel:9588720362">Call 9588720362</a>
-                            </p>
+                            <a href="tel:9588720362">
+                                <FaPhone className="fa-icon" />
+                                <span>Talk to me</span>
+                                <p>
+                                    Call 9588720362
+                                </p>
+                            </a>
                         </div>
                     </div>
 
                     <div className="contact-item">
                         <div className="contact-item-inner outer-shadow">
-                            <FaEnvelope className="fa-icon" />
-                            <p>
-                                <span>Email</span>{" "}
-                                <a href="mailto:kushalkumar1362@gmail.com">
+                            <a href="mailto:kushalkumar1362@gmail.com">
+                                <FaEnvelope className="fa-icon" />
+                                <p>
+                                    <span>Email</span>{" "}
                                     kushalkumar1362@gmail.com
-                                </a>
-                            </p>
+                                </p>
+                            </a>
                         </div>
                     </div>
 

@@ -33,7 +33,14 @@
     align-items: center;
 }
 
-.contact-item-inner .fa-icon {
+.contact-item-inner a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-icon {
     font-size: 25px;
     color: var(--skin-color);
     margin-bottom: 10px;
@@ -48,8 +55,8 @@
     text-transform: capitalize;
 }
 
-.contact-item-inner p a,
-.contact-item-inner p p {
+.contact-item-inner a p,
+.contact-item-inner p {
     font-size: 16px;
     line-height: 26px;
     color: var(--text-black-600);
