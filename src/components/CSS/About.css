@@ -234,6 +234,7 @@
 
 .timeline .timeline-item:nth-child(odd) .icon {
     left: -70px;
+    transform: rotateY(180deg);
 }
 .timeline .timeline-item:nth-child(even) .icon {
     right: -70px;
