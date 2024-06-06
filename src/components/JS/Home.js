@@ -11,7 +11,7 @@ const Home = () => {
         setOpen(false);
     }
     return (
-        <div className="min-h-[100vh] relative md:pt-20">
+        <div className="min-h-[100vh] relative md:pt-20 fadeInTopAnimation">
             <div className="effect-wrap">
                 <div className="effect effect-1"></div>
                 <div className="effect effect-2">

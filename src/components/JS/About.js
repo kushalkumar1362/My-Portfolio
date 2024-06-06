@@ -14,7 +14,7 @@ const About = () => {
     const [activeTab, setActiveTab] = useState("skills");
 
     return (
-        <div className="pt-20 p-0 min-h-[100vh]">
+        <div className="pt-20 p-0 min-h-[100vh] fadeInTopAnimation">
             <StyleSwitcher />
             <div className="container">
                 <div className="flex flex-wrap">

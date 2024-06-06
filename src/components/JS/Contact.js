@@ -6,7 +6,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const Contact = () => {
     return (
-        <div className="py-[80px]  min-h[100vh]">
+        <div className="py-[80px]  min-h[100vh] fadeInTopAnimation">
             <StyleSwitcher />
             <div className="container">
                 <div className="flex flex-wrap">

@@ -118,3 +118,19 @@ body.stop-scrolling {
 .hover-in-shadow:hover::after {
     box-shadow: var(--inner-shadow);
 }
+
+.fadeInTopAnimation {
+    animation: fadeInTop 1s ease;
+}
+
+@keyframes fadeInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

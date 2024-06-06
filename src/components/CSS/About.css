@@ -1,3 +1,4 @@
+
 .section-title {
     padding: 0 15px;
     flex: 0 0 100%;
@@ -136,7 +137,6 @@
 .tab-content {
     flex: 0 0 100%;
     max-width: 100%;
-    animation: fadeInTop 1s ease;
 }
 
 .category-divider {

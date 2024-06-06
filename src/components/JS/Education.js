@@ -20,13 +20,13 @@ const Education = () => {
         {
             period: "March, 2017 - March, 2018",
             degree: "",
-            institution: "Public Girls Sr Sec Scholl",
+            institution: "Public Girls Sr Sec School",
             percentage: "77%",
         },
     ];
     const TimelineItem = ({ period, degree, institution, percentage }) => (
         <div className="timeline-item">
-            <div className="timeline-item-inner outer-shadow">
+            <div className="timeline-item-inner outer-shadow ">
                 <FaGraduationCap className="icon" />
                 <span>{period}</span>
                 <h3>{degree}</h3>
@@ -36,7 +36,7 @@ const Education = () => {
         </div>
     );
     return (
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap fadeInTopAnimation">
             <div className="education tab-content">
                 <div className="flex flex-wrap">
                     <div className="timeline">

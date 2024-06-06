@@ -37,7 +37,7 @@ const Skills = () => {
             <hr />
             <div className="about-tabs">
                 {items.map((item, index) => (
-                    <span key={index} className="tab-item outer-shadow active">
+                    <span key={index} className="tab-item outer-shadow active hover:scale-125">
                         {item}
                     </span>
                 ))}
@@ -46,7 +46,7 @@ const Skills = () => {
     );
 
     return (
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap fadeInTopAnimation">
             <div className="skills tab-content active">
                 {categories.map((category, index) => (
                     <Category
