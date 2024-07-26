@@ -23,39 +23,46 @@ import project7Large from "../../Images/Projects/project7/project-7-large.png";
 import project8Thumb from "../../Images/Projects/project8/project-8-thumb.png";
 import project8Large from "../../Images/Projects/project8/project-8-large.png";
 
+import project9Thumb from "../../Images/Projects/Project9/project-9-thumb.png";
+import project9Large from "../../Images/Projects/Project9/project-9-large.png";
+
 const ProjectImages = {
-    project1: {
-        thumb: project1Thumb,
-        large: project1Large,
-    },
-    project2: {
-        thumb: project2Thumb,
-        large: project2Large,
-    },
-    project3: {
-        thumb: project3Thumb,
-        large: project3Large,
-    },
-    project4: {
-        thumb: project4Thumb,
-        large: project4Large,
-    },
-    project5: {
-        thumb: project5Thumb,
-        large: project5Large,
-    },
-    project6: {
-        thumb: project6Thumb,
-        large: project6Large,
-    },
-    project7: {
-        thumb: project7Thumb,
-        large: project7Large,
-    },
-    project8: {
-        thumb: project8Thumb,
-        large: project8Large,
-    },
+  project1: {
+    thumb: project1Thumb,
+    large: project1Large,
+  },
+  project2: {
+    thumb: project2Thumb,
+    large: project2Large,
+  },
+  project3: {
+    thumb: project3Thumb,
+    large: project3Large,
+  },
+  project4: {
+    thumb: project4Thumb,
+    large: project4Large,
+  },
+  project5: {
+    thumb: project5Thumb,
+    large: project5Large,
+  },
+  project6: {
+    thumb: project6Thumb,
+    large: project6Large,
+  },
+  project7: {
+    thumb: project7Thumb,
+    large: project7Large,
+  },
+  project8: {
+    thumb: project8Thumb,
+    large: project8Large,
+  },
+  project9: {
+    thumb: project9Thumb,
+    large: project9Large,
+  },
 };
 
 export default ProjectImages;

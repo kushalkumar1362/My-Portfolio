@@ -8,7 +8,7 @@ const Education = () => {
             period: "August, 2021 - May, 2024",
             degree: "Bachelor of Computer Applications",
             institution: "Govt. PG College, Ambala Cantt",
-            percentage: "78.32%",
+            percentage: "78.53%",
         },
         {
             period: "March, 2019 - March, 2020",
