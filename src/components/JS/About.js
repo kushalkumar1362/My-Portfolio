@@ -76,8 +76,8 @@ const About = () => {
                     <div className="about-info">
                         <p>
                             I am <span>Kushal Kumar</span>, a passionate and
-                            dedicated Full web developer. Currently looking for a{" "}
-                            <span>Full Stack Developer Job</span>, I have gained
+                            dedicated Mern Stack developer. Currently looking for a{" "}
+                            <span>Mern Stack Developer Job</span>, I have gained
                             substantial knowledge and experience in web
                             development through internships and personal
                             projects.{" "}
