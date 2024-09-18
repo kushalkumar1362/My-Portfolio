@@ -26,6 +26,14 @@ const portfolioData = [
     website: "https://kushal-kumar-portfolio.vercel.app/",
   },
   {
+    title: "Snake Game",
+    description:
+      "This is a simple implementation of the classic Snake game in C++. The game runs on the console and uses the standard input/output streams for user interaction. The game features a snake that can move up, down, left, or right, and eats food pellets to grow longer. The game ends when the snake collides with the boundary or its own body.",
+    tools: ["C++"],
+    screenshots: [images.project10.thumb, images.project10.large],
+    Github: "https://github.com/kushalkumar1362/Snake-Game.git",
+  },
+  {
     title: "Shopping Cart",
     description:
       "I created my shopping cart using React.js, featuring a dynamic and responsive design. The shopping cart showcases my projects, skills, and experiences, demonstrating my proficiency in modern front-end development and React.js.",

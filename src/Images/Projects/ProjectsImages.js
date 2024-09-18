@@ -26,6 +26,9 @@ import project8Large from "../../Images/Projects/project8/project-8-large.png";
 import project9Thumb from "../../Images/Projects/Project9/project-9-thumb.png";
 import project9Large from "../../Images/Projects/Project9/project-9-large.png";
 
+import project10Thumb from "../../Images/Projects/Project10/project-10-thumb.png";
+import project10Large from "../../Images/Projects/Project10/project-10-large.png";
+
 const ProjectImages = {
   project1: {
     thumb: project1Thumb,
@@ -62,6 +65,10 @@ const ProjectImages = {
   project9: {
     thumb: project9Thumb,
     large: project9Large,
+  },
+  project10: {
+    thumb: project10Thumb,
+    large: project10Large,
   },
 };
 

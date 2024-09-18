@@ -18,7 +18,7 @@ const Skills = () => {
     },
     {
       title: "Frameworks/ Libraries",
-      items: ["React", "Tailwind", "Express", "MongoDB"],
+      items: ["React", "Tailwind", "Express", "MongoDB", "SQL"],
     },
     {
       title: "Tools/ Platforms",

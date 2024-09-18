@@ -4,7 +4,7 @@ import { FaPlus, FaMinus } from "react-icons/fa6";
 
 const PortfolioPopup = ({ data, onClose }) => {
 
-  const { title, description, tools, website, screenshots } = data;
+  const { title, description, tools, website, screenshots, Github } = data;
   const [showDetails, setShowDetails] = useState(false);
 
   return (
@@ -27,17 +27,32 @@ const PortfolioPopup = ({ data, onClose }) => {
                   <li>
                     Tools <span>{tools.join(", ")}</span>
                   </li>
-                  <li>
-                    Web{" "}
-                    <span>
-                      <a
-                        href={website}
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        {website}
-                      </a>
-                    </span>
-                  </li>
+                  {website && (
+                    <li>
+                      Web{" "}
+                      <span>
+                        <a
+                          href={website}
+                          target="_blank"
+                          rel="noopener noreferrer">
+                          {website}
+                        </a>
+                      </span>
+                    </li>
+                  )}
+                  {Github && (
+                    <li>
+                      GitHub{" "}
+                      <span>
+                        <a
+                          href={Github}
+                          target="_blank"
+                          rel="noopener noreferrer">
+                          {Github}
+                        </a>
+                      </span>
+                    </li>
+                  )}
                 </ul>
               </div>
             </div>
