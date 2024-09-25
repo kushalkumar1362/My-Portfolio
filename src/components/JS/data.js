@@ -10,20 +10,36 @@ const portfolioData = [
     website: "https://atm-machine-frontend.vercel.app/",
   },
   {
+    title: "personal portfolio",
+    description:
+      "I created my portfolio using React.js, featuring a dynamic and responsive design. The portfolio showcases my projects, skills, and experiences, demonstrating my proficiency in modern front-end development and React.js.",
+    tools: ["React", "Tailwind", "CSS"],
+    screenshots: [images.project2.thumb, images.project2.large],
+    website: "https://kushal-kumar-portfolio.vercel.app/",
+  },
+  {
+    title: "Apna Blog",
+    description:
+      "Apna Blog is a modern blogging platform built with React and Redux Toolkit for seamless front-end experience and Appwrite as the backend for secure and scalable data handling. It allows users to easily create, update, edit, and delete blogs. Users can also upload images to complement their blog posts, ensuring a rich and dynamic content experience. The intuitive user interface, coupled with Redux for efficient state management, makes the platform user-friendly, while Appwrite ensures smooth handling of user authentication, file storage, and real-time updates.",
+    tools: ["React", "Tailwind", "React Redux toolkit", "Appwrite"],
+    screenshots: [images.project12.thumb, images.project12.large],
+    website: "https://apna-blog-project.vercel.app/",
+  },
+  {
+    title: "ToDo App",
+    description:
+      "The ToDo App is a simple and intuitive task management tool built using React for the frontend, styled with Tailwind CSS, and managed with Context API for state management. The app allows users to create, edit, delete, and mark tasks as complete, providing a seamless and efficient way to keep track of daily tasks.",
+    tools: ["React", "Tailwind", "Context Api"],
+    screenshots: [images.project11.thumb, images.project11.large],
+    website: "https://to-buddy-do.vercel.app/",
+  },
+  {
     title: "github explorer",
     description:
       "GitHub Explorer is a dynamic web app providing real-time GitHub user and repository data. It features search suggestions and customizable dark/light modes, enhancing the user experience.",
     tools: ["HTML", "CSS", "JavaScript", "GitHub API"],
     screenshots: [images.project1.thumb, images.project1.large],
     website: "https://github-explorer-kushal.netlify.app/",
-  },
-  {
-    title: "personal portfolio",
-    description:
-      "I created my portfolio using React.js, featuring a dynamic and responsive design. The portfolio showcases my projects, skills, and experiences, demonstrating my proficiency in modern front-end development and React.js.",
-    tools: ["React", "HTML", "Tailwind", "CSS"],
-    screenshots: [images.project2.thumb, images.project2.large],
-    website: "https://kushal-kumar-portfolio.vercel.app/",
   },
   {
     title: "Snake Game",
