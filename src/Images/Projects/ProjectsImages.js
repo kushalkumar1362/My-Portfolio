@@ -23,17 +23,17 @@ import project7Large from "../../Images/Projects/project7/project-7-large.png";
 import project8Thumb from "../../Images/Projects/project8/project-8-thumb.png";
 import project8Large from "../../Images/Projects/project8/project-8-large.png";
 
-import project9Thumb from "../../Images/Projects/Project9/project-9-thumb.png";
-import project9Large from "../../Images/Projects/Project9/project-9-large.png";
+import project9Thumb from "../../Images/Projects/project9/project-9-thumb.png";
+import project9Large from "../../Images/Projects/project9/project-9-large.png";
 
-import project10Thumb from "../../Images/Projects/Project10/project-10-thumb.png";
-import project10Large from "../../Images/Projects/Project10/project-10-large.png";
+import project10Thumb from "../../Images/Projects/project10/project-10-thumb.png";
+import project10Large from "../../Images/Projects/project10/project-10-large.png";
 
-import project11Thumb from "../../Images/Projects/Project11/project-11-thumb.png";
-import project11Large from "../../Images/Projects/Project11/project-11-large.png";
+import project11Thumb from "../../Images/Projects/project11/project-11-thumb.png";
+import project11Large from "../../Images/Projects/project11/project-11-large.png";
 
-import project12Thumb from "../../Images/Projects/Project12/project-12-thumb.png";
-import project12Large from "../../Images/Projects/Project12/project-12-large.png";
+import project12Thumb from "../../Images/Projects/project12/project-12-thumb.png";
+import project12Large from "../../Images/Projects/project12/project-12-large.png";
 
 const ProjectImages = {
   project1: {
