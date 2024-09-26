@@ -27,6 +27,7 @@ const Skills = () => {
         "Eclipse",
         "Git",
         "MongoDB Compass",
+        "Appwrite",
         "Cloudinary",
         "PostMan",
         "Figma",

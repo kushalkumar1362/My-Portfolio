@@ -6,6 +6,21 @@ import StyleSwitcher from "../Themes/StyleSwitcher";
 
 const Home = () => {
   const [isOpen, setOpen] = useState(false);
+
+  const navigationItems = [
+    {
+      link: "/about",
+      label: "More About Me"
+    },
+    {
+      link: "/portfolio",
+      label: "Portfolio"
+    },
+    {
+      link: "/contact",
+      label: "Contact"
+    },
+  ]
   function clickHandler() {
     window.scrollTo(0, 0);
     setOpen(false);
@@ -16,47 +31,11 @@ const Home = () => {
       <div className="effect-wrap">
         <div className="effect effect-1"></div>
         <div className="effect effect-2">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          {[...Array(28)].map((_, i) => <div key={i} />)}
         </div>
         <div className="effect effect-3"></div>
         <div className="effect effect-4">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          {[...Array(10)].map((_, i) => <div key={i} />)}
         </div>
       </div>
       <div className="container">
@@ -65,27 +44,15 @@ const Home = () => {
             <p>Hello</p>
             <h2>I'm Kushal Kumar </h2>
             <h1>Developer & DSA Learner</h1>
-            <NavLink
-              to="/about"
-              className={"btn-1 outer-shadow hover-in-shadow"}
-              onClick={clickHandler}>
-              More About Me
-            </NavLink>{" "}
-            &nbsp;
-            <NavLink
-              to="/portfolio"
-              className={"btn-1 outer-shadow hover-in-shadow"}
-              onClick={clickHandler}>
-              Portfolio
-            </NavLink>{" "}
-            &nbsp;
-            <NavLink
-              to="/contact"
-              className={"btn-1 outer-shadow hover-in-shadow"}
-              onClick={clickHandler}>
-              Contact
-            </NavLink>{" "}
-            &nbsp;
+            {navigationItems.map(({ link, label }) => (
+              <NavLink
+                key={label}
+                to={link}
+                className={"btn-1 outer-shadow hover-in-shadow mr-5"}
+                onClick={clickHandler}>
+                {label}
+              </NavLink>
+            ))}
           </div>
           <div className=".home-image">
             <div className="img-box inner-shadow">

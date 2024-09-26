@@ -1,89 +1,12 @@
-// src/Images/images.js
-import project1Thumb from "../../Images/Projects/project1/project-1-thumb.png";
-import project1Large from "../../Images/Projects/project1/project-1-large.png";
+const projectImages = {};
 
-import project2Thumb from "../../Images/Projects/project2/project-2-thumb.png";
-import project2Large from "../../Images/Projects/project2/project-2-large.png";
+for (let i = 1; i <= 12; i++) {
+  const projectName = `project${i}`;
 
-import project3Thumb from "../../Images/Projects/project3/project-3-thumb.png";
-import project3Large from "../../Images/Projects/project3/project-3-large.png";
+  projectImages[projectName] = {
+    thumb: require(`./${projectName}/project-${i}-thumb.png`),
+    large: require(`./${projectName}/project-${i}-large.png`),
+  };
+}
 
-import project4Thumb from "../../Images/Projects/project4/project-4-thumb.png";
-import project4Large from "../../Images/Projects/project4/project-4-large.png";
-
-import project5Thumb from "../../Images/Projects/project5/project-5-thumb.png";
-import project5Large from "../../Images/Projects/project5/project-5-large.png";
-
-import project6Thumb from "../../Images/Projects/project6/project-6-thumb.png";
-import project6Large from "../../Images/Projects/project6/project-6-large.png";
-
-import project7Thumb from "../../Images/Projects/project7/project-7-thumb.png";
-import project7Large from "../../Images/Projects/project7/project-7-large.png";
-
-import project8Thumb from "../../Images/Projects/project8/project-8-thumb.png";
-import project8Large from "../../Images/Projects/project8/project-8-large.png";
-
-import project9Thumb from "../../Images/Projects/project9/project-9-thumb.png";
-import project9Large from "../../Images/Projects/project9/project-9-large.png";
-
-import project10Thumb from "../../Images/Projects/project10/project-10-thumb.png";
-import project10Large from "../../Images/Projects/project10/project-10-large.png";
-
-import project11Thumb from "../../Images/Projects/project11/project-11-thumb.png";
-import project11Large from "../../Images/Projects/project11/project-11-large.png";
-
-import project12Thumb from "../../Images/Projects/project12/project-12-thumb.png";
-import project12Large from "../../Images/Projects/project12/project-12-large.png";
-
-const ProjectImages = {
-  project1: {
-    thumb: project1Thumb,
-    large: project1Large,
-  },
-  project2: {
-    thumb: project2Thumb,
-    large: project2Large,
-  },
-  project3: {
-    thumb: project3Thumb,
-    large: project3Large,
-  },
-  project4: {
-    thumb: project4Thumb,
-    large: project4Large,
-  },
-  project5: {
-    thumb: project5Thumb,
-    large: project5Large,
-  },
-  project6: {
-    thumb: project6Thumb,
-    large: project6Large,
-  },
-  project7: {
-    thumb: project7Thumb,
-    large: project7Large,
-  },
-  project8: {
-    thumb: project8Thumb,
-    large: project8Large,
-  },
-  project9: {
-    thumb: project9Thumb,
-    large: project9Large,
-  },
-  project10: {
-    thumb: project10Thumb,
-    large: project10Large,
-  },
-  project11: {
-    thumb: project11Thumb,
-    large: project11Large,
-  },
-  project12: {
-    thumb: project12Thumb,
-    large: project12Large,
-  }
-};
-
-export default ProjectImages;
+export default projectImages;
