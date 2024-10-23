@@ -18,6 +18,14 @@ const portfolioData = [
     website: "https://kushal-kumar-portfolio.vercel.app/",
   },
   {
+    title: "E-Cart",
+    description:
+      "I created my E cart using React.js(redux, react-router-dom), featuring a dynamic and responsive design. The shopping cart showcases my projects, skills, and experiences, demonstrating my proficiency in modern front-end development and React.js.",
+    tools: ["React", "HTML", "Tailwind", "CSS"],
+    screenshots: [images.project8.thumb, images.project8.large],
+    website: "https://e-cart-shop.vercel.app/",
+  },
+  {
     title: "Apna Blog",
     description:
       "Apna Blog is a modern blogging platform built with React and Redux Toolkit for seamless front-end experience and Appwrite as the backend for secure and scalable data handling. It allows users to easily create, update, edit, and delete blogs. Users can also upload images to complement their blog posts, ensuring a rich and dynamic content experience. The intuitive user interface, coupled with Redux for efficient state management, makes the platform user-friendly, while Appwrite ensures smooth handling of user authentication, file storage, and real-time updates.",
@@ -48,14 +56,6 @@ const portfolioData = [
     tools: ["C++"],
     screenshots: [images.project10.thumb, images.project10.large],
     Github: "https://github.com/kushalkumar1362/Snake-Game.git",
-  },
-  {
-    title: "Shopping Cart",
-    description:
-      "I created my shopping cart using React.js, featuring a dynamic and responsive design. The shopping cart showcases my projects, skills, and experiences, demonstrating my proficiency in modern front-end development and React.js.",
-    tools: ["React", "HTML", "Tailwind", "CSS"],
-    screenshots: [images.project8.thumb, images.project8.large],
-    website: "https://shopping-cart-2003.vercel.app/cart",
   },
   {
     title: "Interactive Quiz App",
